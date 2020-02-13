@@ -11,7 +11,7 @@
             flex-wrap: wrap;
         }
         
-        input {
+        .but {
             height: 50px;
             margin: 10px;
             padding: 10px;
@@ -19,6 +19,7 @@
             background-color: honeydew;
             text-align: center;
             font-size: 30px;
+            box-shadow: 0 4px 4px 2px grey;
         }
         
         .container {
@@ -33,9 +34,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             flex-basis: auto;
+            box-shadow: 0 4px 4px 2px grey;
         }
         
-        .SecondBorder {
+        .secondBorder {
             border-radius: 35px;
             border: 2px solid dimgray;
             height: 250px;
@@ -43,8 +45,8 @@
             margin: 10px;
         }
         
-        .UnderPicture {
-            height: 170px;
+        .underPicture {
+            height: 190px;
             width: 280px;
             margin: 5px;
             padding: 5px;
@@ -55,53 +57,75 @@
         img {
             border-radius: 35px;
         }
+        
+        .container:hover {
+            box-shadow: 0 6px 2px 2px grey;
+            transition-delay: 150ms;
+            transform: scale(1.02)
+        }
+        
+        .container:active {
+            transition-delay: 150ms;
+            transform: scaleY(0.9);
+            box-shadow: 0 0 0 0;
+        }
+        
+        .but:hover {
+            box-shadow: 0 6px 2px 2px grey;
+            transition-delay: 150ms;
+            transform: scale(1.02)
+        }
+        
+        .but:active {
+            transition-delay: 150ms;
+            transform: scaleY(0.9);
+            box-shadow: 0 0 0 0;
+        }
     </style>
 </head>
 
 <body>
     <div class="display">
-        <form name="form1">
-            <input type="button" value="Load album" />
-        </form>
+        <div class="but">Load album</div>
     </div>
     <div class="display">
         <div class="container">
-            <div class="SecondBorder">
+            <div class="secondBorder">
                 <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275  px" height="250px">
             </div>
-            <div class="UnderPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
+            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
                 productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
             </div>
         </div>
 
         <div class="container">
-            <div class="SecondBorder">
+            <div class="secondBorder">
                 <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
             </div>
-            <div class="UnderPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
+            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
                 productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
             </div>
         </div>
 
         <div class="container">
-            <div class="SecondBorder">
+            <div class="secondBorder">
                 <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
             </div>
-            <div class="UnderPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
+            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
                 productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
             </div>
         </div>
 
         <div class="container">
-            <div class="SecondBorder">
+            <div class="secondBorder">
                 <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
             </div>
-            <div class="UnderPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
+            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
                 productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
             </div>
         </div>
-
     </div>
+
 </body>
 
 </html>
