@@ -19,6 +19,12 @@
             background-color: honeydew;
             text-align: center;
             font-size: 30px;
+            border-radius: 12px;
+            display: flex;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            transition-duration: 150ms;
             box-shadow: 0 4px 4px 2px grey;
         }
         
@@ -34,6 +40,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             flex-basis: auto;
+            transition-duration: 150ms;
             box-shadow: 0 4px 4px 2px grey;
         }
         
@@ -66,19 +73,17 @@
         
         .container:active {
             transition-delay: 150ms;
-            transform: scaleY(0.9);
+            transform: scale(0.9);
             box-shadow: 0 0 0 0;
         }
         
         .but:hover {
             box-shadow: 0 6px 2px 2px grey;
-            transition-delay: 150ms;
             transform: scale(1.02)
         }
         
         .but:active {
-            transition-delay: 150ms;
-            transform: scaleY(0.9);
+            transform: scale(0.9);
             box-shadow: 0 0 0 0;
         }
     </style>
@@ -125,6 +130,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+      var data = {};
+
+      fetch("https://jsonplaceholder.typicode.com/photos")
+          .then(response => response.json())
+          .then(photos => console.log(photos));
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+        
+      });
+
+      function generateHTMLCard () {
+        
+      }
+    </script>
 
 </body>
 
