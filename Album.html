@@ -132,20 +132,20 @@
     </div>
 
     <script>
-      var data = {};
+        var data = {};
 
-      fetch("https://jsonplaceholder.typicode.com/photos")
-          .then(response => response.json())
-          .then(photos => console.log(photos));
+        fetch("https://jsonplaceholder.typicode.com/photos")
+            .then(response => response.json())
+            .then(photos => console.log(photos));
 
-      document.addEventListener("DOMContentLoaded", function(event) {
-        
-      });
+        document.addEventListener("DOMContentLoaded", function(event) {
 
-      function generateHTMLCard (imageURL, text) {
-          var cardElement = document.createElement('div');
-          var container = document.querySelector('.display');
-          div.innerHTML = `
+        });
+
+        function generateHTMLCard(imageURL, text) {
+            var cardElement = document.createElement('div');
+            var container = document.querySelector('.display');
+            div.innerHTML = `
                 <div class="container">
                     <div class="secondBorder">
                         <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
@@ -155,8 +155,13 @@
                     </div>
                 </div>
           `;
-          container.appendChild(cardElement);
-      }
+            container.appendChild(cardElement);
+            var imageURL = `${"https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" }`;
+            var text = `${`Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write 
+            and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. 
+            Unlike several previous and concurrent Disney Feature Animation productions, the films pre-production team remained
+             relatively small and isolated from upper management until the film went into full production.[6]` }`;
+        }
     </script>
 
 </body>
