@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Alb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <style>
         .display {
             display: flex;
@@ -12,124 +13,24 @@
             margin-left: 100px;
         }
         
-        .card {
-            top: 150px;
-            background-color: azure;
-        }
-        
-        .column {
-            width: fit-content;
-            margin-left: 1px;
-            margin-bottom: 1px;
-            margin-top: 1px;
-            background-color: cadetblue;
-        }
-        
-        .but {
-            box-sizing: border-box;
-            height: 50px;
-            margin: 10px;
-            padding: 10px;
-            border: 2px ridge dimgrey;
-            background-color: honeydew;
-            text-align: center;
-            font-size: 30px;
-            border-radius: 12px;
-            display: flex;
-            cursor: pointer;
-            flex-direction: column;
-            justify-content: center;
-            transition-duration: 150ms;
-            box-shadow: 0 4px 4px 2px grey;
-            position: fixed;
-            flex-wrap: nowrap;
-        }
-        
-        #loadMore {
-            box-sizing: border-box;
-            height: 50px;
-            margin: 10px;
-            padding: 10px;
-            border: 2px ridge dimgrey;
-            background-color: honeydew;
-            text-align: center;
-            font-size: 30px;
-            border-radius: 12px;
-            display: flex;
-            cursor: pointer;
-            flex-direction: column;
-            justify-content: center;
-            transition-duration: 150ms;
-            box-shadow: 0 4px 4px 2px grey;
-            top: 100px;
-            position: fixed;
-        }
-        
-        #loadMore:hover {
-            box-shadow: 0 6px 2px 2px grey;
-            transform: scale(1.02)
-        }
-        
-        #loadMore:active {
-            transform: scale(0.9);
-            box-shadow: 0 0 0 0;
-        }
-        
-        .container {
-            height: 500px;
-            width: 300px;
-            margin: 15px;
-            padding: 15px;
-            border: 1px solid dimgray;
-            text-align: center;
-            border-radius: 35px;
-            align-content: space-evenly;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex-basis: auto;
-            transition-duration: 150ms;
-            box-shadow: 0 4px 4px 2px grey;
-        }
-        
-        .secondBorder {
-            border-radius: 35px;
-            border: 2px solid dimgray;
-            height: 250px;
-            width: 270;
-            margin: 10px;
-        }
-        
-        .underPicture {
-            height: 190px;
-            width: 280px;
-            margin: 5px;
-            padding: 5px;
-            word-break: break-word;
-            text-align: justify;
-        }
-        
-        img {
-            border-radius: 35px;
-        }
-        
-        .container:hover {
+        .card:hover {
             box-shadow: 0 6px 2px 2px grey;
             transition-delay: 150ms;
             transform: scale(1.02)
         }
         
-        .container:active {
+        .card:active {
             transition-delay: 150ms;
             transform: scale(0.9);
             box-shadow: 0 0 0 0;
         }
         
-        .but:hover {
+        .btn:hover {
             box-shadow: 0 6px 2px 2px grey;
             transform: scale(1.02)
         }
         
-        .but:active {
+        .btn:active {
             transform: scale(0.9);
             box-shadow: 0 0 0 0;
         }
@@ -137,67 +38,30 @@
 </head>
 
 <body>
-    <div class="column">
-        <div class="but">Load album</div>
+    <div class="position: sticky-top">
+        <button type="button" class=" btn btn-light border-dark" style="height: 50px; margin:15px; padding:15px;box-shadow: 0 4px 4px 2px grey;border-radius:35px">Load album</button>
+        <p>
+            <button type="button" class=" btn btn-light border-dark" style="height: 50px; margin:15px; padding:15px;box-shadow: 0 4px 4px 2px grey;border-radius:35px"><a href="#" id="loa">  Show more</a></button>
+        </p>
     </div>
-    <div class="column">
-        <a href="#" id="loadMore">Load more</a>
-    </div>
-    <!--<div class="display">
-        <div class="container">
-            <div class="secondBorder">
-                <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275  px" height="250px">
-            </div>
-            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
-                productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="secondBorder">
-                <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
-            </div>
-            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
-                productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="secondBorder">
-                <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
-            </div>
-            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
-                productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="secondBorder">
-                <img src="https://i.pinimg.com/originals/76/6c/f7/766cf770ea8dd3529bd8e0c41d6784be.jpg" width="275px" height="250px">
-            </div>
-            <div class="underPicture">Dean DeBlois, who had co-written Mulan (1998) with Chris Sanders, was brought on to co-write and co-direct Lilo & Stitch, while Disney executive Clark Spencer was assigned to produce. Unlike several previous and concurrent Disney Feature Animation
-                productions, the film's pre-production team remained relatively small and isolated from upper management until the film went into full production.[6]
-            </div>
-        </div>
-    </div> -->
     <div class="display">
-        <script src="https://cdjns.cloudflare/ajax/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(function(e) {
-                $("aData").slice(0, 4).show;
-                $("#loadMore").on('click', function(e) {
+                $("DOMElementLoaded").slice(0, 3).show;
+                $("#loa").click(function(e) {
                     e.preventDefault();
-                    $("aData:hidden").slice(0, 4).slideDown();
+                    $("DOMElementLoaded:hidden").slice(0, 3).slideDown();
 
                 })
             })
         </script>
-        <div class="card">
+        <div>
 
             <script>
-                var aData = [];
                 document.addEventListener("DOMContentLoaded", function(event) {
-                    document.querySelector('.but').addEventListener('click', () => {
+                    $('.btn').click(() => {
                         getData();
                     });
                 });
@@ -210,19 +74,21 @@
                     });
                 };
 
+
                 function generateHTMLCard(imageURL, text) {
                     var cardElement = document.createElement('div');
                     var container = document.querySelector('.display');
                     cardElement.innerHTML = `
-            <div class="container">
-                <div class="secondBorder">
-                    <img src="${imageURL}" width="275px" height="250px">
+            <div class="card " style ="width: 350px; height: 500px; margin:15px; padding:15px;box-shadow: 0 4px 4px 2px grey;border-radius:35px">
+                <div  >
+                    <img class = "card-image-top img-thumbnail  border-dark mx-auto d-block  " src="${imageURL}" style="width:244px; height:245px; margin:10px;border-radius:35px">
                 </div>
-                <div class="underPicture">
-                    ${text}
+                <div class="card-body">
+                  <p class ="card-text" > ${text} </p>
                 </div>
             </div>
             `;
+
                     container.appendChild(cardElement);
                 }
             </script>
