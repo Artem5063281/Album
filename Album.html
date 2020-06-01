@@ -49,10 +49,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(function(e) {
-                $("DOMElementLoaded").slice(0, 3).show;
+                $(document.documentElement).slice(0, 3).show();
                 $("#loa").click(function(e) {
                     e.preventDefault();
-                    $("DOMElementLoaded:hidden").slice(0, 3).slideDown();
+                    $(document.documentElement).hide().slice(0, 3).slideDown();
 
                 })
             })
@@ -60,7 +60,7 @@
         <div>
 
             <script>
-                document.addEventListener("DOMContentLoaded", function(event) {
+                $(document).ready(function(event) {
                     $('.btn').click(() => {
                         getData();
                     });
